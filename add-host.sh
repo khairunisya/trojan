@@ -22,10 +22,10 @@ echo "example : id01"
 read -rp "Generate Your Wilcard SSH/SSL Cloudflare: " -e sub
 echo ""
 echo "Sub-Domain" ${sub}
-DOMAIN=gettunel.me
-SUB_DOMAIN=${sub}.gettunel.me
-CF_ID=gratisan009@gmail.com
-CF_KEY=fc1013cf0ace7fa2f2d86ab4f37cb8e165e4f
+DOMAIN=dnsvstunnel.xyz
+SUB_DOMAIN=${sub}.dnsvstunnel.xyz
+CF_ID=vstunnel@gmail.com
+CF_KEY=bf2f943aba9cefaf4cc246ab198519ab15e93
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
