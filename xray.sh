@@ -489,25 +489,25 @@ netfilter-persistent reload
 
 cd
 # Install BBR
-wget https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/khairunisya/trojan/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 cd /usr/bin
-wget -O addtr "https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/addtrojan.sh"
-wget -O cektr "https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/cektrojan.sh"
-wget -O deltr "https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/deltrojan.sh"
-wget -O renewtr "https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/renewtrojan.sh"
-wget -O menu "https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/menu.sh"
-wget -O menu-trojan "https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/menu-trojan.sh"
-wget -O xp-tr "https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/xp-tr.sh"
-wget -O cert-tr "https://gitlab.com/wid09/cert/-/raw/main/cert.sh"
+wget -O addtr "https://raw.githubusercontent.com/khairunisya/trojan/main/addtrojan.sh"
+wget -O cektr "https://raw.githubusercontent.com/khairunisya/trojan/main/cektrojan.sh"
+wget -O deltr "https://raw.githubusercontent.com/khairunisya/trojan/main/deltrojan.sh"
+wget -O renewtr "https://raw.githubusercontent.com/khairunisya/trojan/main/renewtrojan.sh"
+wget -O menu "https://raw.githubusercontent.com/khairunisya/trojan/main/menu.sh"
+wget -O menu-trojan "https://raw.githubusercontent.com/khairunisya/trojan/main/menu-trojan.sh"
+wget -O xp-tr "https://raw.githubusercontent.com/khairunisya/trojan/main/xp-tr.sh"
+wget -O cert-tr "https://raw.githubusercontent.com/khairunisya/trojan/main/cert.sh"
 
 # download script
 cd /usr/bin
 if [ -f "/home/email_cf.conf" ]; then
 echo "Custom Domain"
-  wget -O add-host "https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/ccf.sh"
+  wget -O add-host "https://raw.githubusercontent.com/khairunisya/trojan/main/ccf.sh"
 else
 echo "Original Domain Script"
-  wget -O add-host "https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/add-host.sh"
+  wget -O add-host "https://raw.githubusercontent.com/khairunisya/trojan/main/add-host.sh"
 fi
 
 chmod +x add-host

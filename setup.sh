@@ -32,8 +32,8 @@ fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 custom(){
-wget https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/email-cf.sh && chmod +x email-cf.sh && sed -i -e 's/\r$//' email-cf.sh && ./email-cf.sh && rm -f /root/email-cf.sh
-wget https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/ccf.sh && chmod +x ccf.sh && sed -i -e 's/\r$//' ccf.sh && ./ccf.sh && rm -f /root/ccf.sh
+wget https://raw.githubusercontent.com/khairunisya/trojan/main/email-cf.sh && chmod +x email-cf.sh && sed -i -e 's/\r$//' email-cf.sh && ./email-cf.sh && rm -f /root/email-cf.sh
+wget https://raw.githubusercontent.com/khairunisya/trojan/main/ccf.sh && chmod +x ccf.sh && sed -i -e 's/\r$//' ccf.sh && ./ccf.sh && rm -f /root/ccf.sh
 clear
 echo "Mempersiapkan install custom domain..."
 sleep 5
@@ -42,14 +42,14 @@ log_install
 }
 
 onscript(){
-wget https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/add-host.sh && chmod +x add-host.sh && sed -i -e 's/\r$//' add-host.sh && ./add-host.sh && rm -f /root/add-host.sh
+wget https://raw.githubusercontent.com/khairunisya/trojan/main/add-host.sh && chmod +x add-host.sh && sed -i -e 's/\r$//' add-host.sh && ./add-host.sh && rm -f /root/add-host.sh
 Install_sc
 log_install
 }
 Install_sc(){
 #install v2ray
-wget https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/xray.sh && chmod +x xray.sh && screen -S v2ray ./xray.sh && rm -f /root/xray.sh
-wget https://gitlab.com/wid09/multi-trojan-xray/-/raw/main/set-br.sh && chmod +x set-br.sh && sed -i -e 's/\r$//' set-br.sh && ./set-br.sh && rm -f /root/set-br.sh
+wget https://raw.githubusercontent.com/khairunisya/trojan/main/xray.sh && chmod +x xray.sh && screen -S v2ray ./xray.sh && rm -f /root/xray.sh
+wget https://raw.githubusercontent.com/khairunisya/trojan/main/set-br.sh && chmod +x set-br.sh && sed -i -e 's/\r$//' set-br.sh && ./set-br.sh && rm -f /root/set-br.sh
 }
 log_install(){
 history -c
